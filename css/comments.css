@@ -1,0 +1,87 @@
+* , body , html {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    background: #fafafa;
+}
+
+#comments-form, .comments {
+    margin: 50px auto;
+    width: 400px;
+}
+
+#comments-form input, #comments-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border: solid silver 2px;
+    font-size: 14px;
+    border-radius: 5px;   
+}
+
+#comments-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+#comments-form button {
+    border-radius: 5px;
+    border: 0;
+    background: #e06;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+}
+
+#comments-form button:hover {
+    background: rgb(65, 0, 45);
+}
+
+#error:not(:empty) {
+    font-size: 17px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.comments h3 {
+    margin-bottom: 10px;
+    color: #5d5d5d;
+}
+
+.comments h3 span {
+    color: #e06;
+}
+
+.comments .new_comment {
+    width: 400px;
+    background: #eee;
+    border: 2px solid silver;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.comments .new_comment .delete {
+    float: right;
+    cursor: pointer;
+    color: #e06;
+    font-weight: bold;
+}
+
+.comments .new_comment .delete:hover{
+    color: black;
+}
+
+.comments .new_comment .name {
+    font-weight: bold;
+}
+
+.comments .new_comment .comment {
+    margin-top: 10px;
+}
